@@ -8,8 +8,8 @@
 	font-size: 16px;
   --color-text: #f5f3ee;
   --color-bg: #0e0d0e;
-  --color-link: #ffffff;
-  --color-link-hover: #ffffff;
+  --color-link: #000000;
+  --color-link-hover: #000000;
 	--page-padding: 0.5rem;
 	--grid-gap: var(--page-padding);
 	--color-bg-content: #0e0d0e;
@@ -80,7 +80,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: var(--color-link-hover);
 	outline: none;
 }
@@ -152,6 +152,7 @@ a:focus-visible {
 }
 
 .frame__title {
+	color:#0e0d0e;
 	white-space: nowrap;
   grid-area: title;
   font-size: clamp(2rem,20vw,20rem);
@@ -166,6 +167,9 @@ a:focus-visible {
 }
 
 .frame__subline {
+	color: black;
+	font-weight: 600;
+
 	grid-area: subline;
 }
 

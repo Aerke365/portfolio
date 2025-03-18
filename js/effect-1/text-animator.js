@@ -46,12 +46,12 @@ export class TextAnimator {
           transformOrigin: '50% 0%'
       },
       {
-        duration: 0.03,
+        duration: 0.05,
         ease: 'none',
         onComplete: () => gsap.set(char, { innerHTML: initialHTML, color: initialColor, delay: 0.03 }),
-        repeat: 3,
+        repeat: 4,
         repeatRefresh: true,
-        repeatDelay: 0.01, // delay between repeats
+        repeatDelay: 0.02, // delay between repeats
         delay: (position + 1) * 0.01, // delay between chars
         innerHTML: () => {
           const randomChar = lettersAndSymbols[Math.floor(Math.random() * lettersAndSymbols.length)];

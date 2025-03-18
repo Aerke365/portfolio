@@ -11,7 +11,7 @@ const init = () => {
   });
 
   // Same for all links
-  document.querySelectorAll('a.hover-effect').forEach(item => {
+  document.querySelectorAll('.hover-effect').forEach(item => {
     const animator = new TextAnimator(item);
     item.addEventListener('mouseenter', () => {
       animator.animate();
